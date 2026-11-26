@@ -35,7 +35,8 @@ security rules.
 ## Resolved: one Firebase project per learner
 
 For this individual module, each learner creates their own Firebase project (Dev/Staging/Prod apps
-within it). This is separate from the capstone's team-level Firebase setup in M11.
+within it). This is separate from the team capstone's team-level Firebase setup, covered in the
+capstone brief your trainer provides separately.
 
 ## Deliverable
 

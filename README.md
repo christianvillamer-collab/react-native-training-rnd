@@ -1,7 +1,8 @@
 # React Native Bare Workflow Training
 
 This repo holds the Build-to-Teach version of the React Native Bare Workflow curriculum: ten
-individual-work stages in `modules/` (M01–M10), followed by a team capstone (M11). The format is
+individual-work stages in `modules/` (M01–M10). A team capstone follows in Weeks 3–4; its brief and
+materials are provided by your trainer in a separate repository, not included here. The format is
 different on purpose: instead of being taught the material, the senior developer builds toward each
 stage's deliverable from a brief, and writes up how they did it as they go. The write-up is what
 ends up teaching the next cohort.
@@ -16,8 +17,10 @@ breakdown (EM, senior developer, junior/end-learner).
 | Path | What it holds |
 | --- | --- |
 | `modules/` | The ten stage folders (M01–M10), each with a brief and a write-up template |
-| `modules/m11-airlinebooker-capstone/` | The team capstone, with its own brief and write-up template |
 | `docs/` | The PRD, the Solution Design, and the Build-to-Teach framework this repo implements |
+
+The team capstone (its own brief and write-up template, at team scope) is not part of this repo —
+your trainer provides it separately.
 
 Each stage folder also gets a `tasks.md`, generated from its `brief.md` with `/trainee-task-planner`
 — an ordered checklist mirroring the brief. It isn't written by hand and isn't included until it's
@@ -75,7 +78,8 @@ Review happens at the end of every stage, not just at the end of the course — 
 | `tasks.md` | Generated from `brief.md` via `/trainee-task-planner` | An ordered checklist mirroring the brief. You tick the boxes; it holds no answers and no steps you weren't already told. |
 
 Your React Native code lives outside this repository, in your own GitHub repo (set up in M01). Link
-it from the header of your write-up. The capstone folder has the same files, at team scope.
+it from the header of your write-up. The capstone repo your trainer hands you has the same files, at
+team scope.
 
 ## Stages
 
@@ -84,19 +88,19 @@ it from the header of your write-up. The capstone folder has the same files, at 
 | [M01](modules/m01-toolchain-hybrid-project-setup/brief.md) | Toolchain and Hybrid Project Setup | 1 | 4 | Native toolchain, the bare-workflow starter project | `PersonalProfileApp` skeleton |
 | [M02](modules/m02-community-modules-native-linking/brief.md) | Community Modules and Native Linking | 1 | 4 | Hand-linking native modules, a lock-in audit | Three linked modules + audit |
 | [M03](modules/m03-ios-android-project-internals/brief.md) | iOS and Android Project Basics | 1 | 5 | App identity, EAS build profiles | Dev/Staging/Prod EAS build profiles |
-| [M04](modules/m04-core-components-layout-navigation/brief.md) | Core Components, Layout and Navigation | 1 | 5 | Screens, navigation, accessibility | Profile, Edit Profile, Settings screens + the accessibility checklist (reused in M09, M11) |
+| [M04](modules/m04-core-components-layout-navigation/brief.md) | Core Components, Layout and Navigation | 1 | 5 | Screens, navigation, accessibility | Profile, Edit Profile, Settings screens + the accessibility checklist (reused in M09 and the capstone) |
 | [M05](modules/m05-dev-workflow-professional-structure/brief.md) | Dev Workflow and Professional Structure | 1 | 2 | Debug/build loop, project structure | Restructured app + storage service |
 | [M06](modules/m06-firebase-bare-project/brief.md) | Firebase on a Bare Project | 2 | 4 | Auth, Firestore, security rules | Auth'd `To-Do App` skeleton |
 | [M07](modules/m07-state-and-server-data/brief.md) | State and Server Data | 2 | 4 | Zustand, Context, TanStack Query, optimistic updates | To-do CRUD + service layer |
 | [M08](modules/m08-realtime-sync-offline/brief.md) | Real-Time Sync and Offline | 2 | 4 | Snapshot listeners, offline persistence | Synced, offline-safe to-do list |
 | [M09](modules/m09-professional-ui-core-components/brief.md) | Professional UI and Core Components | 2 | 4 | Paper UI, list performance, accessibility | Polished, perf-tuned to-do app |
-| [M10](modules/m10-push-notifications-fcm/brief.md) | Push Notifications with FCM | 2 | 4 | FCM, permissions, a local push-sending script | Push-enabled to-do app (handed off to M11) |
-| [M11](modules/m11-airlinebooker-capstone/brief.md) | AirlineBooker Pro (team capstone) | 3–4 | 40 | Team build, architecture, release with EAS | — (terminal stage) |
+| [M10](modules/m10-push-notifications-fcm/brief.md) | Push Notifications with FCM | 2 | 4 | FCM, permissions, a local push-sending script | Push-enabled to-do app (handed off to the team capstone) |
 
 Work the stages in order. Week 1 builds the Personal Profile App (M01–M05); Week 2 builds the
 Full-Stack To-Do App (M06–M10) on new Firebase/state/sync/UI/push foundations; Weeks 3–4 are the
-team capstone (M11), which draws on all ten prior write-ups rather than extending either project
-directly. Folder names are descriptive; each brief refers to other stages by module ID (M01–M11).
+team capstone (AirlineBooker Pro, provided separately by your trainer), which draws on all ten prior
+write-ups rather than extending either project directly. Folder names are descriptive; each brief
+refers to other stages by module ID (M01–M10).
 
 ## Assessment
 
@@ -105,9 +109,9 @@ directly. Folder names are descriptive; each brief refers to other stages by mod
 - The two individual projects — the Personal Profile App (end of Week 1) and the Full-Stack To-Do
   App (end of Week 2) — are worth 25%, scored against their own module checkpoints plus code
   quality.
-- The capstone (M11) is worth 50%: the 100-point rubric in `modules/m11-airlinebooker-capstone/brief.md`
-  (70+ passes), plus individual contribution from pull requests, judged by your trainer rather than
-  counted.
+- The capstone is worth 50%: a 100-point rubric (70+ passes) in the capstone brief your trainer
+  provides separately, plus individual contribution from pull requests, judged by your trainer
+  rather than counted.
 
 ## Open decisions before the first cohort
 
@@ -119,7 +123,8 @@ program owner before the dates noted:
 - **Hardware** — a real-device pool for push (M10) and the capstone (at least one iPhone and one
   Android phone per team), sized from cohort size. EAS Build builds iOS in the cloud, so a Mac pool
   is no longer a hard requirement.
-- **Firebase ownership and billing alerts** — per-learner in M06, per-team-per-environment in M11.
+- **Firebase ownership and billing alerts** — per-learner in M06, per-team-per-environment in the
+  capstone.
 - **End-to-end tool** (Maestro is the program default; confirm if this cohort uses something else).
 - **Exact Xcode/Node point versions** — re-verified against the pinned baseline immediately before
   freeze, two weeks ahead of Day 1.

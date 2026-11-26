@@ -398,6 +398,9 @@ It works on a real iPhone and a real Android device, and the denied-permission p
 
 ### Module 11: AirlineBooker Pro (40 hours, with four workshops)
 
+*Not included in this repo's `modules/` folder (M01–M10 only) — the trainer provides the capstone
+brief and materials separately, in their own repository.*
+
 *From the repo: `week-03-04`, with parts of `week-05-06`, `week-07-08`, `week-09-10`, `capstone-projects` and `docs/deployment-guide.md`.*
 
 **Learning objectives**

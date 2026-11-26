@@ -98,6 +98,10 @@ Each of the 11 modules ends in one pass-or-fail checkpoint, and this design uses
 
 ## Reference and Capstone Application Design
 
+*Not included in this repo's `modules/` folder (M01–M10 only) — the trainer provides the capstone
+brief and materials separately, in their own repository. This section documents the capstone design
+for reference.*
+
 AirlineBooker Pro is built in layers, with a service layer between the screens and Firebase, so a team of 4–5 can build vertical slices without tangling the code.
 
 &#91;embedded content: AirlineBooker Pro architecture - 5 layers on the device, 2 services off it\]
