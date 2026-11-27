@@ -1,12 +1,16 @@
 .DS_Store
 .claude/
 .vscode/
+.opencode/
 
 graphify-out/
 
 node_modules/
 dist/
 coverage/
+knowledge/
 *.db
 .env
 .env.test
+opencode.json
+AGENTS.md
