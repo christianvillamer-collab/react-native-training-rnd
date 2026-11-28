@@ -7,39 +7,39 @@ best — and install and link a community module by hand.
 
 ## Setup
 
-- [ ] Read this stage's `brief.md` fully.
-- [ ] Ask your trainer for the filled-in example lock-in-audit row, so you know the format to match
+- [x] Read this stage's `brief.md` fully.
+- [x] Ask your trainer for the filled-in example lock-in-audit row, so you know the format to match
       before you start building yours.
-- [ ] Research the hybrid rule: when to reach for a community module vs. a small Expo utility.
-- [ ] Research how native linking works: autolinking, `pod install`, Gradle changes, and how an icon
+- [x] Research the hybrid rule: when to reach for a community module vs. a small Expo utility.
+- [x] Research how native linking works: autolinking, `pod install`, Gradle changes, and how an icon
       font gets registered on each platform (`UIAppFonts` in Info.plist, a Gradle script on
       Android).
-- [ ] Research how to judge whether a community module is safe to depend on: recent releases, New
+- [x] Research how to judge whether a community module is safe to depend on: recent releases, New
       Architecture support, fit with React Native 0.88, and its standing on React Native Directory.
-- [ ] Research what `eas build` and `eas submit` each do, and set up an EAS account (free tier).
-- [ ] Research `expo prebuild` vs. committed native folders, and why this course hand-manages the
+- [x] Research what `eas build` and `eas submit` each do, and set up an EAS account (free tier).
+- [x] Research `expo prebuild` vs. committed native folders, and why this course hand-manages the
       committed ones.
 
 ## Build
 
-- [ ] Add `@react-native-async-storage/async-storage`, `react-native-safe-area-context` and
+- [x] Add `@react-native-async-storage/async-storage`, `react-native-safe-area-context` and
       `react-native-vector-icons` to the profile app using `npx expo install`.
-- [ ] Link each module by hand wherever autolinking needs help, including registering the icon font
+- [x] Link each module by hand wherever autolinking needs help, including registering the icon font
       on both platforms yourself.
-- [ ] For each of the three dependencies, check and record: last release date, New Architecture
+- [x] For each of the three dependencies, check and record: last release date, New Architecture
       support, and its React Native Directory standing.
-- [ ] Write the one-page lock-in audit covering every dependency added so far, matched to your
+- [x] Write the one-page lock-in audit covering every dependency added so far, matched to your
       trainer's example row format.
-- [ ] Run `npx expo-doctor` again and resolve anything new it flags.
+- [x] Run `npx expo-doctor` again and resolve anything new it flags.
 
 ## Verify
 
-- [ ] Verify all three modules are linked and visibly working on both platforms.
-- [ ] Verify the lock-in audit covers every dependency added so far and matches the example row's
+- [x] Verify all three modules are linked and visibly working on both platforms.
+- [x] Verify the lock-in audit covers every dependency added so far and matches the example row's
       format.
-- [ ] Get instructor review on the lock-in audit and resolve any feedback.
-- [ ] Verify `npx expo-doctor` reports no errors.
-- [ ] Do a final self-review against every checkbox in `brief.md`'s Definition of done.
+- [x] Get instructor review on the lock-in audit and resolve any feedback.
+- [x] Verify `npx expo-doctor` reports no errors.
+- [x] Do a final self-review against every checkbox in `brief.md`'s Definition of done.
 
 ## Write-up
 
